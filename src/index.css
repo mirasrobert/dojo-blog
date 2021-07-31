@@ -1,13 +1,97 @@
+:root {
+  --primary: #4e73df;
+  --secondary: #858796;
+  --success: #1cc88a;
+  --info: #36b9cc;
+  --warning: #f6c23e;
+  --danger: #e74a3b;
+  --dark: #5a5c69;
+  --light: #f8f9fc;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  color: #111;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #111;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px var(--primary) solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary);
 }
